@@ -25,6 +25,8 @@ describe("fork package contract", () => {
          });
          const [{ files }] = JSON.parse(packed);
          const paths = files.map(({ path }: { path: string }) => path);
+         expect(paths).toContain("dist/index.js");
+         expect(paths).toContain("dist/index.d.ts");
          expect(paths.filter((path: string) => path.startsWith("dist/tests/") || /\.test\.[^/]+$/.test(path))).toEqual(
             [],
          );
