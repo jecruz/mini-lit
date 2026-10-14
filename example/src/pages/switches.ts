@@ -1,6 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@mariozechner/mini-lit/dist/Card.js";
-import { Label } from "@mariozechner/mini-lit/dist/Label.js";
-import { Switch } from "@mariozechner/mini-lit/dist/Switch.js";
+import { Card, CardContent, CardHeader, CardTitle } from "@jecruz/mini-lit/dist/Card.js";
+import { Label } from "@jecruz/mini-lit/dist/Label.js";
+import { Switch } from "@jecruz/mini-lit/dist/Switch.js";
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 

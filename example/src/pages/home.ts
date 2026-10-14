@@ -1,7 +1,7 @@
-import { Badge } from "@mariozechner/mini-lit/dist/Badge.js";
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { Card, CardContent, CardHeader, CardTitle } from "@mariozechner/mini-lit/dist/Card.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
+import { Badge } from "@jecruz/mini-lit/dist/Badge.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { Card, CardContent, CardHeader, CardTitle } from "@jecruz/mini-lit/dist/Card.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
 import { html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
 import {
@@ -52,7 +52,7 @@ export class HomePage extends LitElement {
                <div class="space-y-6">
                   <div>
                      <h3 class="text-lg font-medium mb-2">1. Installation</h3>
-                     <code-block .code=${"npm install lit @mariozechner/mini-lit"} language="bash"></code-block>
+                     <code-block .code=${"npm install lit @jecruz/mini-lit"} language="bash"></code-block>
                   </div>
 
                   <div>
@@ -118,10 +118,10 @@ export default defineConfig({
                         .code=${`/* src/app.css */
 
 /* Import theme (includes dark mode and utilities) */
-@import "@mariozechner/mini-lit/styles/themes/default.css";
+@import "@jecruz/mini-lit/styles/themes/default.css";
 
 /* Tell Tailwind to scan mini-lit components */
-@source "../node_modules/@mariozechner/mini-lit/dist";
+@source "../node_modules/@jecruz/mini-lit/dist";
 
 /* Import Tailwind */
 @import "tailwindcss";`}
@@ -133,7 +133,7 @@ export default defineConfig({
                      <h3 class="text-lg font-medium mb-2">5. Use Components</h3>
                      <code-block
                         .code=${`import { html, render } from 'lit'
-import { Button, Card, Badge, icon } from '@mariozechner/mini-lit'
+import { Button, Card, Badge, icon } from '@jecruz/mini-lit'
 import { Send } from 'lucide'
 import './app.css'
 
@@ -455,7 +455,7 @@ render(App(), document.body)
                         ${icon(Package, "sm")}
                         <span>npm Package</span>
                      `,
-                     onClick: () => window.open("https://www.npmjs.com/package/@mariozechner/mini-lit", "_blank"),
+                     onClick: () => window.open("https://www.npmjs.com/package/@jecruz/mini-lit", "_blank"),
                   })}
                   ${Button({
                      variant: "outline",
@@ -463,7 +463,7 @@ render(App(), document.body)
                         ${icon(Code, "sm")}
                         <span>GitHub</span>
                      `,
-                     onClick: () => window.open("https://github.com/badlogic/mini-lit", "_blank"),
+                     onClick: () => window.open("https://github.com/jecruz/mini-lit", "_blank"),
                   })}
                   ${Button({
                      variant: "outline",

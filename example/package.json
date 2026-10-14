@@ -9,7 +9,7 @@
     "check": "biome check . --write && tsc --noEmit"
   },
   "dependencies": {
-    "@mariozechner/mini-lit": "file:/../",
+    "@jecruz/mini-lit": "file:..",
     "@tailwindcss/vite": "^4.1.13",
     "@vaadin/router": "^2.0.0",
     "lit": "^3.3.1",

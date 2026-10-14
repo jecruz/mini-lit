@@ -1,22 +1,22 @@
-import { Badge } from "@mariozechner/mini-lit/dist/Badge.js";
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import { Label } from "@mariozechner/mini-lit/dist/Label.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
-import { Textarea } from "@mariozechner/mini-lit/dist/Textarea.js";
+import { Badge } from "@jecruz/mini-lit/dist/Badge.js";
+import { Input } from "@jecruz/mini-lit/dist/Input.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import { Label } from "@jecruz/mini-lit/dist/Label.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
+import { Textarea } from "@jecruz/mini-lit/dist/Textarea.js";
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { Code, FileText, Key, Mail, Share, Terminal } from "lucide";
 
 // Register the copy-button custom element
-import "@mariozechner/mini-lit/dist/CopyButton.js";
+import "@jecruz/mini-lit/dist/CopyButton.js";
 
 @customElement("page-copybutton")
 export class CopyButtonPage extends LitElement {
    @state() customText = "Hello, this is custom text to copy!";
    @state() apiKey = "sk-1234567890abcdef";
    @state() shareUrl = "https://example.com/share/abc123";
-   @state() codeSnippet = `npm install @mariozechner/mini-lit`;
+   @state() codeSnippet = `npm install @jecruz/mini-lit`;
    @state() longText =
       `This is a longer piece of text that demonstrates copying larger content blocks. It includes multiple sentences and can span several lines. Perfect for testing the copy functionality with more substantial content.`;
 
@@ -48,8 +48,8 @@ export class CopyButtonPage extends LitElement {
                         </div>
 
                         <div class="flex items-center gap-4 p-3 bg-muted/50 rounded-md font-mono text-sm">
-                           <code class="flex-1">npm install @mariozechner/mini-lit</code>
-                           <copy-button text="npm install @mariozechner/mini-lit"></copy-button>
+                           <code class="flex-1">npm install @jecruz/mini-lit</code>
+                           <copy-button text="npm install @jecruz/mini-lit"></copy-button>
                         </div>
 
                         <div class="flex items-center gap-4">
@@ -58,15 +58,15 @@ export class CopyButtonPage extends LitElement {
                         </div>
                      </div>
                   `}
-                  code=${`import "@mariozechner/mini-lit/dist/CopyButton.js";
+                  code=${`import "@jecruz/mini-lit/dist/CopyButton.js";
 
 // Simple text copy
 <copy-button text="Hello, World!"></copy-button>
 
 // Code snippet copy
 <div class="flex items-center gap-4 p-3 bg-muted/50 rounded-md">
-  <code>npm install @mariozechner/mini-lit</code>
-  <copy-button text="npm install @mariozechner/mini-lit"></copy-button>
+  <code>npm install @jecruz/mini-lit</code>
+  <copy-button text="npm install @jecruz/mini-lit"></copy-button>
 </div>
 
 // URL copy
@@ -222,7 +222,7 @@ export class CopyButtonPage extends LitElement {
                            <div class="relative">
                               <pre
                                  class="bg-muted/50 p-4 rounded-md text-sm overflow-x-auto"
-                              ><code>${`import { CopyButton } from '@mariozechner/mini-lit';
+                              ><code>${`import { CopyButton } from '@jecruz/mini-lit';
 
 // Usage example
 <copy-button
@@ -232,7 +232,7 @@ export class CopyButtonPage extends LitElement {
 ></copy-button>`}</code></pre>
                               <div class="absolute top-2 right-2">
                                  <copy-button
-                                    text="import { CopyButton } from '@mariozechner/mini-lit';
+                                    text="import { CopyButton } from '@jecruz/mini-lit';
 
 // Usage example
 <copy-button
@@ -251,7 +251,7 @@ export class CopyButtonPage extends LitElement {
                            <div class="relative">
                               <pre class="bg-muted/50 p-4 rounded-md text-sm overflow-x-auto"><code>${JSON.stringify(
                                  {
-                                    name: "@mariozechner/mini-lit",
+                                    name: "@jecruz/mini-lit",
                                     version: "1.0.0",
                                     dependencies: {
                                        lit: "^3.0.0",
@@ -265,7 +265,7 @@ export class CopyButtonPage extends LitElement {
                                  <copy-button
                                     text="${JSON.stringify(
                                        {
-                                          name: "@mariozechner/mini-lit",
+                                          name: "@jecruz/mini-lit",
                                           version: "1.0.0",
                                           dependencies: {
                                              lit: "^3.0.0",
@@ -289,7 +289,7 @@ export class CopyButtonPage extends LitElement {
                               <pre
                                  class="bg-muted/50 p-4 rounded-md text-sm overflow-x-auto"
                               ><code>${`# Install dependencies
-npm install @mariozechner/mini-lit
+npm install @jecruz/mini-lit
 
 # Build the project
 npm run build
@@ -299,7 +299,7 @@ npm run dev`}</code></pre>
                               <div class="absolute top-2 right-2">
                                  <copy-button
                                     text="# Install dependencies
-npm install @mariozechner/mini-lit
+npm install @jecruz/mini-lit
 
 # Build the project
 npm run build

@@ -1,4 +1,4 @@
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 
@@ -142,7 +142,7 @@ $$`;
 
                <preview-code
                   .preview=${html` <markdown-block .content=${basicMarkdown}></markdown-block> `}
-                  code=${`import '@mariozechner/mini-lit/dist/MarkdownBlock.js';
+                  code=${`import '@jecruz/mini-lit/dist/MarkdownBlock.js';
 
 const markdown = \`# Heading 1
 ## Heading 2

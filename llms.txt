@@ -52,20 +52,20 @@ Live demo: https://minilit.mariozechner.at
 ## Quick Setup
 
 ```bash
-npm install lit @mariozechner/mini-lit
+npm install lit @jecruz/mini-lit
 ```
 
 Configure Tailwind CSS v4:
 ```css
 /* src/app.css */
-@import "@mariozechner/mini-lit/styles/themes/default.css";
-@source "../node_modules/@mariozechner/mini-lit/dist";
+@import "@jecruz/mini-lit/styles/themes/default.css";
+@source "../node_modules/@jecruz/mini-lit/dist";
 @import "tailwindcss";
 ```
 
 **Available theme files:**
-- `@mariozechner/mini-lit/styles/themes/default.css` - Clean modern theme
-- `@mariozechner/mini-lit/styles/themes/claude.css` - Claude-inspired theme
+- `@jecruz/mini-lit/styles/themes/default.css` - Clean modern theme
+- `@jecruz/mini-lit/styles/themes/claude.css` - Claude-inspired theme
 
 ## Component Architecture
 
@@ -80,7 +80,7 @@ mini-lit provides two component types:
 ## Core Components Usage
 ## Tree-Shaking & Bundle Optimization
 
-**CRITICAL**: The root index (`@mariozechner/mini-lit`) now **ONLY** exports core utilities (component system, i18n, and icons). Individual components are **NOT** exported from the root to enforce optimal tree-shaking.
+**CRITICAL**: The root index (`@jecruz/mini-lit`) now **ONLY** exports core utilities (component system, i18n, and icons). Individual components are **NOT** exported from the root to enforce optimal tree-shaking.
 
 ### What's Exported from Root Index
 ```typescript
@@ -93,19 +93,19 @@ import {
   defaultEnglish, defaultGerman,
   // Icons
   icon
-} from "@mariozechner/mini-lit";
+} from "@jecruz/mini-lit";
 ```
 
 ### Component Imports (Required)
 ```typescript
 // ✅ MUST import components from their individual files
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { Card } from "@mariozechner/mini-lit/dist/Card.js";
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
-import "@mariozechner/mini-lit/dist/ThemeToggle.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { Card } from "@jecruz/mini-lit/dist/Card.js";
+import { Input } from "@jecruz/mini-lit/dist/Input.js";
+import "@jecruz/mini-lit/dist/ThemeToggle.js";
 
 // ❌ Components are NOT exported from root
-import { Button, Card } from "@mariozechner/mini-lit"; // Won't work!
+import { Button, Card } from "@jecruz/mini-lit"; // Won't work!
 ```
 
 **Bundle Size**:
@@ -121,7 +121,7 @@ import { Button, Card } from "@mariozechner/mini-lit"; // Won't work!
 
 ### Button
 ```typescript
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
 
 // Object syntax
 Button({
@@ -139,7 +139,7 @@ Button("Click me", "primary", "sm")
 
 ### Card
 ```typescript
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@mariozechner/mini-lit/dist/Card.js";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@jecruz/mini-lit/dist/Card.js";
 
 Card({
   hoverable: true,
@@ -156,7 +156,7 @@ Card({
 
 ### Input
 ```typescript
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
+import { Input } from "@jecruz/mini-lit/dist/Input.js";
 
 Input({
   type: "text",      // "text" | "email" | "password" | "number" | "url" | "tel" | "search" | "date"
@@ -174,7 +174,7 @@ Input({
 
 ### Select
 ```typescript
-import { Select } from "@mariozechner/mini-lit/dist/Select.js";
+import { Select } from "@jecruz/mini-lit/dist/Select.js";
 
 Select({
   value: "option1",
@@ -204,8 +204,8 @@ Select({
 
 ### Checkbox & Switch
 ```typescript
-import { Checkbox } from "@mariozechner/mini-lit/dist/Checkbox.js";
-import { Switch } from "@mariozechner/mini-lit/dist/Switch.js";
+import { Checkbox } from "@jecruz/mini-lit/dist/Checkbox.js";
+import { Switch } from "@jecruz/mini-lit/dist/Switch.js";
 
 Checkbox({
   checked: false,
@@ -224,7 +224,7 @@ Switch({
 
 ### Dialog
 ```typescript
-import { Dialog, DialogContent, DialogHeader, DialogFooter } from "@mariozechner/mini-lit/dist/Dialog.js";
+import { Dialog, DialogContent, DialogHeader, DialogFooter } from "@jecruz/mini-lit/dist/Dialog.js";
 
 Dialog({
   isOpen: true,
@@ -249,8 +249,8 @@ Dialog({
 
 ### Alert & Badge
 ```typescript
-import { Alert, AlertTitle, AlertDescription } from "@mariozechner/mini-lit/dist/Alert.js";
-import { Badge } from "@mariozechner/mini-lit/dist/Badge.js";
+import { Alert, AlertTitle, AlertDescription } from "@jecruz/mini-lit/dist/Alert.js";
+import { Badge } from "@jecruz/mini-lit/dist/Badge.js";
 
 Alert({
   variant: "default", // "default" | "destructive"
@@ -268,7 +268,7 @@ Badge({
 
 ### Progress
 ```typescript
-import { Progress } from "@mariozechner/mini-lit/dist/Progress.js";
+import { Progress } from "@jecruz/mini-lit/dist/Progress.js";
 
 Progress({
   value: 50,
@@ -279,7 +279,7 @@ Progress({
 
 ### Separator
 ```typescript
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
 
 Separator({
   orientation: "horizontal", // "horizontal" | "vertical"
@@ -344,7 +344,7 @@ Separator({
 ## Icons
 
 ```typescript
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
 import { Send, Settings, User } from "lucide";
 
 // Render icon with size
@@ -374,7 +374,7 @@ The i18n system provides:
 ### Setup TypeScript Interface
 ```typescript
 // Extend with your messages
-declare module "@mariozechner/mini-lit" {
+declare module "@jecruz/mini-lit" {
   interface i18nMessages extends MiniLitRequiredMessages {
     Welcome: string;
     Settings: string;
@@ -386,7 +386,7 @@ declare module "@mariozechner/mini-lit" {
 
 ### Configure Translations
 ```typescript
-import { setTranslations, defaultEnglish, defaultGerman } from "@mariozechner/mini-lit";
+import { setTranslations, defaultEnglish, defaultGerman } from "@jecruz/mini-lit";
 
 setTranslations({
   en: {
@@ -408,7 +408,7 @@ setTranslations({
 
 ### Use in Components
 ```typescript
-import { i18n, getCurrentLanguage, setLanguage } from "@mariozechner/mini-lit";
+import { i18n, getCurrentLanguage, setLanguage } from "@jecruz/mini-lit";
 
 // Simple strings
 ${i18n("Welcome")}
@@ -426,7 +426,7 @@ setLanguage("de")     // Switch language and reload page
 
 ### FileButton
 ```typescript
-import { FileButton } from "@mariozechner/mini-lit/dist/FileButton.js";
+import { FileButton } from "@jecruz/mini-lit/dist/FileButton.js";
 
 FileButton({
   accept: ".pdf,.doc",
@@ -439,7 +439,7 @@ FileButton({
 
 ### CopyButton
 ```typescript
-import { CopyButton } from "@mariozechner/mini-lit/dist/CopyButton.js";
+import { CopyButton } from "@jecruz/mini-lit/dist/CopyButton.js";
 
 CopyButton({
   text: "Text to copy",
@@ -450,7 +450,7 @@ CopyButton({
 
 ### DownloadButton
 ```typescript
-import { DownloadButton } from "@mariozechner/mini-lit/dist/DownloadButton.js";
+import { DownloadButton } from "@jecruz/mini-lit/dist/DownloadButton.js";
 
 DownloadButton({
   data: "File content here",
@@ -462,7 +462,7 @@ DownloadButton({
 
 ### Diff Viewer
 ```typescript
-import { Diff } from "@mariozechner/mini-lit/dist/Diff.js";
+import { Diff } from "@jecruz/mini-lit/dist/Diff.js";
 
 Diff({
   oldText: "Original text",
@@ -475,7 +475,7 @@ Diff({
 
 ### Functional Component Helper
 ```typescript
-import { fc, html, type TemplateResult } from "@mariozechner/mini-lit/dist/mini.js";
+import { fc, html, type TemplateResult } from "@jecruz/mini-lit/dist/mini.js";
 
 const MyComponent = fc<{ text: string }>(({ text }) => {
   return html`<div>${text}</div>`;
@@ -484,7 +484,7 @@ const MyComponent = fc<{ text: string }>(({ text }) => {
 
 ### Reactive State
 ```typescript
-import { createState } from "@mariozechner/mini-lit/dist/mini.js";
+import { createState } from "@jecruz/mini-lit/dist/mini.js";
 
 const state = createState({
   count: 0,
@@ -502,7 +502,7 @@ state.count++;
 
 ### Refs
 ```typescript
-import { createRef, ref } from "@mariozechner/mini-lit/dist/mini.js";
+import { createRef, ref } from "@jecruz/mini-lit/dist/mini.js";
 
 const inputRef = createRef<HTMLInputElement>();
 
@@ -562,13 +562,13 @@ For components without children:
 
 ```typescript
 import { html, render } from "lit";
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { Card, CardContent } from "@mariozechner/mini-lit/dist/Card.js";
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
-import { Select } from "@mariozechner/mini-lit/dist/Select.js";
-import { Switch } from "@mariozechner/mini-lit/dist/Switch.js";
-import { icon, i18n, setTranslations, defaultEnglish } from "@mariozechner/mini-lit";
-import "@mariozechner/mini-lit/dist/ThemeToggle.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { Card, CardContent } from "@jecruz/mini-lit/dist/Card.js";
+import { Input } from "@jecruz/mini-lit/dist/Input.js";
+import { Select } from "@jecruz/mini-lit/dist/Select.js";
+import { Switch } from "@jecruz/mini-lit/dist/Switch.js";
+import { icon, i18n, setTranslations, defaultEnglish } from "@jecruz/mini-lit";
+import "@jecruz/mini-lit/dist/ThemeToggle.js";
 import { Send } from "lucide";
 import "./app.css";
 
@@ -642,13 +642,13 @@ import type {
   AlertProps, AlertVariant,
   BaseComponentProps,
   TemplateResult
-} from "@mariozechner/mini-lit";
+} from "@jecruz/mini-lit";
 ```
 
 ## Package Exports
 
-- Main: `@mariozechner/mini-lit`
-- Styles: `@mariozechner/mini-lit/styles/*`
+- Main: `@jecruz/mini-lit`
+- Styles: `@jecruz/mini-lit/styles/*`
 - Components: Imported from main export
 
 ## Performance Tips

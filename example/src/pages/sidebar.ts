@@ -1,10 +1,10 @@
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
-import { SidebarItem, SidebarSection } from "@mariozechner/mini-lit/dist/Sidebar.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
+import { SidebarItem, SidebarSection } from "@jecruz/mini-lit/dist/Sidebar.js";
 import { html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
 import { Bell, CreditCard, Home, Package, Settings, ShoppingCart, User } from "lucide";
-import "@mariozechner/mini-lit/dist/PreviewCode.js";
+import "@jecruz/mini-lit/dist/PreviewCode.js";
 
 @customElement("page-sidebar")
 export class PageSidebar extends LitElement {
@@ -72,9 +72,9 @@ export class PageSidebar extends LitElement {
                         </div>
                      </div>
                   `}
-                  .code=${`import { SidebarItem } from '@mariozechner/mini-lit';
+                  .code=${`import { SidebarItem } from '@jecruz/mini-lit';
 import { Home, Package, ShoppingCart, User, Settings } from 'lucide';
-import { icon } from '@mariozechner/mini-lit';
+import { icon } from '@jecruz/mini-lit';
 
 <mini-sidebar
   .logo=\${sidebarLogo}
@@ -173,7 +173,7 @@ const sidebarContent = html\`
                         </div>
                      </div>
                   `}
-                  .code=${`import { SidebarItem, SidebarSection } from '@mariozechner/mini-lit';
+                  .code=${`import { SidebarItem, SidebarSection } from '@jecruz/mini-lit';
 
 const sidebarContent = html\`
   \${SidebarItem({
@@ -254,7 +254,7 @@ const sidebarContent = html\`
                         </div>
                      </div>
                   `}
-                  .code=${`import { SidebarItem, SidebarSection, Separator } from '@mariozechner/mini-lit';
+                  .code=${`import { SidebarItem, SidebarSection, Separator } from '@jecruz/mini-lit';
 
 const sidebarContent = html\`
   \${SidebarItem({
@@ -308,7 +308,7 @@ const sidebarContent = html\`
                         </div>
                      </div>
                   `}
-                  .code=${`import { SidebarItem } from '@mariozechner/mini-lit';
+                  .code=${`import { SidebarItem } from '@jecruz/mini-lit';
 
 const sidebarContent = html\`
   \${SidebarItem({ children: "Home", active: true })}

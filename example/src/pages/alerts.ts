@@ -1,6 +1,6 @@
-import { Alert, AlertDescription, AlertTitle } from "@mariozechner/mini-lit/dist/Alert.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
+import { Alert, AlertDescription, AlertTitle } from "@jecruz/mini-lit/dist/Alert.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
 import { html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
 import { AlertTriangle, CheckCircle, Info, XCircle } from "lucide";
@@ -43,7 +43,7 @@ export class AlertsPage extends LitElement {
                         })}
                      </div>
                   `}
-                  code=${`import { Alert, AlertTitle, AlertDescription } from "@mariozechner/mini-lit";
+                  code=${`import { Alert, AlertTitle, AlertDescription } from "@jecruz/mini-lit";
 
 // Default alert
 \${Alert({

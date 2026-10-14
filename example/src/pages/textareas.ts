@@ -1,10 +1,10 @@
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
-import "@mariozechner/mini-lit/dist/PreviewCode.js";
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
-import { Textarea } from "@mariozechner/mini-lit/dist/Textarea.js";
+import "@jecruz/mini-lit/dist/PreviewCode.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
+import { Textarea } from "@jecruz/mini-lit/dist/Textarea.js";
 import { AlertCircle, Copy, Edit3, FileText, MessageSquare, RefreshCw, Save } from "lucide";
 
 @customElement("page-textareas")
@@ -52,7 +52,7 @@ export class TextareasPage extends LitElement {
                         })}
                      </div>
                   `}
-                  code=${`import { Textarea } from "@mariozechner/mini-lit";
+                  code=${`import { Textarea } from "@jecruz/mini-lit";
 
 // Basic textarea
 \${Textarea({
@@ -103,7 +103,7 @@ export class TextareasPage extends LitElement {
                         })}
                      </div>
                   `}
-                  code=${`import { Textarea } from "@mariozechner/mini-lit";
+                  code=${`import { Textarea } from "@jecruz/mini-lit";
 
 // Small (2 rows)
 \${Textarea({
@@ -163,7 +163,7 @@ export class TextareasPage extends LitElement {
                         })}
                      </div>
                   `}
-                  code=${`import { Textarea } from "@mariozechner/mini-lit";
+                  code=${`import { Textarea } from "@jecruz/mini-lit";
 
 // No resize
 \${Textarea({
@@ -233,7 +233,7 @@ export class TextareasPage extends LitElement {
                         })}
                      </div>
                   `}
-                  code=${`import { Textarea } from "@mariozechner/mini-lit";
+                  code=${`import { Textarea } from "@jecruz/mini-lit";
 
 // Normal state
 \${Textarea({
@@ -314,7 +314,7 @@ export class TextareasPage extends LitElement {
                         </div>
                      </div>
                   `}
-                  code=${`import { Textarea, Button, icon } from "@mariozechner/mini-lit";
+                  code=${`import { Textarea, Button, icon } from "@jecruz/mini-lit";
 import { RefreshCw } from "lucide";
 
 @state() charCountText = "";
@@ -375,7 +375,7 @@ import { RefreshCw } from "lucide";
                         }
                      </div>
                   `}
-                  code=${`import { Textarea } from "@mariozechner/mini-lit";
+                  code=${`import { Textarea } from "@jecruz/mini-lit";
 
 @state() interactiveText = "";
 
@@ -487,7 +487,7 @@ import { RefreshCw } from "lucide";
                         </div>
                      </div>
                   `}
-                  code=${`import { Textarea, Button, icon } from "@mariozechner/mini-lit";
+                  code=${`import { Textarea, Button, icon } from "@jecruz/mini-lit";
 import { MessageSquare, Save, Copy, RefreshCw } from "lucide";
 
 // Comment form

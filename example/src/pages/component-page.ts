@@ -1,8 +1,8 @@
-import { Card, CardContent } from "@mariozechner/mini-lit/dist/Card.js";
-import type { ComponentDefinition, ExtractProps, VariantDef } from "@mariozechner/mini-lit/dist/component.js";
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
-import { Label } from "@mariozechner/mini-lit/dist/Label.js";
-import { Select } from "@mariozechner/mini-lit/dist/Select.js";
+import { Card, CardContent } from "@jecruz/mini-lit/dist/Card.js";
+import type { ComponentDefinition, ExtractProps, VariantDef } from "@jecruz/mini-lit/dist/component.js";
+import { Input } from "@jecruz/mini-lit/dist/Input.js";
+import { Label } from "@jecruz/mini-lit/dist/Label.js";
+import { Select } from "@jecruz/mini-lit/dist/Select.js";
 import { html, LitElement, render, type TemplateResult } from "lit";
 
 // Type for getVariantProps return value - maps each variant to base props and option-specific props
@@ -503,7 +503,7 @@ export abstract class ComponentPage<T extends ComponentDefinition> extends LitEl
       resultDiv.appendChild(element);
 
       // Update code display with both functional and web component examples
-      const functionalCode = `import { ${this.componentName} } from "@mariozechner/mini-lit";
+      const functionalCode = `import { ${this.componentName} } from "@jecruz/mini-lit";
 
 ${this.componentName}({${Object.entries(settings)
          .map(([key, value]) => {
@@ -518,7 +518,7 @@ ${this.componentName}({${Object.entries(settings)
          .join(",")}${Object.keys(settings).length > 0 ? ",\n  " : "\n  "}children: "Example Content"
 });`;
 
-      const webComponentCode = `import "@mariozechner/mini-lit/dist/${this.componentName}.cva.js";
+      const webComponentCode = `import "@jecruz/mini-lit/dist/${this.componentName}.cva.js";
 
 <${tag}${attrs ? " " + attrs : ""}>
   Example Content

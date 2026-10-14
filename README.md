@@ -18,7 +18,7 @@ Explore all components with live examples, copy-paste code snippets, and interac
 ### 1. Installation
 
 ```bash
-npm install lit @mariozechner/mini-lit
+npm install lit @jecruz/mini-lit
 ```
 
 ### 2. Setup Tailwind CSS v4
@@ -59,10 +59,10 @@ npm install -D @tailwindcss/cli
 /* src/app.css */
 
 /* Import theme (includes dark mode and utilities) */
-@import "@mariozechner/mini-lit/styles/themes/default.css";
+@import "@jecruz/mini-lit/styles/themes/default.css";
 
 /* Tell Tailwind to scan mini-lit components */
-@source "../node_modules/@mariozechner/mini-lit/dist";
+@source "../node_modules/@jecruz/mini-lit/dist";
 
 /* Import Tailwind */
 @import "tailwindcss";
@@ -88,10 +88,10 @@ If you're using LitElement components with decorators (custom elements or your o
 
 ```typescript
 import { html, render } from "lit";
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { Card } from "@mariozechner/mini-lit/dist/Card.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import "@mariozechner/mini-lit/dist/ThemeToggle.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { Card } from "@jecruz/mini-lit/dist/Card.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import "@jecruz/mini-lit/dist/ThemeToggle.js";
 import { Send } from "lucide";
 import "./app.css";
 
@@ -167,7 +167,9 @@ render(App(), document.body);
 Stateless components that return `TemplateResult`:
 
 ```typescript
-import { Button, Card, Badge } from "@mariozechner/mini-lit";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { Card } from "@jecruz/mini-lit/dist/Card.js";
+import { Badge } from "@jecruz/mini-lit/dist/Badge.js";
 
 // Use directly in templates
 ${Button({ variant: "primary", children: "Click me" })}
@@ -179,8 +181,8 @@ ${Badge({ children: "New" })}
 Stateful components that extend `LitElement`:
 
 ```typescript
-// Custom elements are automatically registered when using the main import
-import "@mariozechner/mini-lit";
+// Import each custom-element module to register the element
+import "@jecruz/mini-lit/dist/ThemeToggle.js";
 
 // Use as HTML tags
 <theme-toggle></theme-toggle>
@@ -189,19 +191,19 @@ import "@mariozechner/mini-lit";
 
 ## Tree-Shaking & Bundle Optimization
 
-**IMPORTANT**: The root index (`@mariozechner/mini-lit`) now only exports core utilities (component system, i18n, and icons). Individual components are **not** exported from the root to encourage optimal tree-shaking.
+**IMPORTANT**: The root index (`@jecruz/mini-lit`) now only exports core utilities (component system, i18n, and icons). Individual components are **not** exported from the root to encourage optimal tree-shaking.
 
 ### Recommended Import Strategy
 
 ```typescript
 // ✅ Optimal - only includes what you use (~50-100KB)
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { Card } from "@mariozechner/mini-lit/dist/Card.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import "@mariozechner/mini-lit/dist/ThemeToggle.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { Card } from "@jecruz/mini-lit/dist/Card.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import "@jecruz/mini-lit/dist/ThemeToggle.js";
 
 // ⚠️ Root index only exports core utilities (NOT components)
-import { i18n, setTranslations, createComponent } from "@mariozechner/mini-lit";
+import { i18n, setTranslations, createComponent } from "@jecruz/mini-lit";
 ```
 
 **What's exported from the root index**:
@@ -230,7 +232,7 @@ mini-lit uses shadcn/ui compatible themes with CSS custom properties for colors,
 Switch themes by importing a different CSS file:
 
 ```css
-@import "@mariozechner/mini-lit/styles/themes/claude.css";
+@import "@jecruz/mini-lit/styles/themes/claude.css";
 ```
 
 ### Dark Mode
@@ -255,7 +257,7 @@ For custom themes and theme generators:
 ### 1. Define TypeScript Interface (for autocomplete)
 
 ```typescript
-declare module "@mariozechner/mini-lit" {
+declare module "@jecruz/mini-lit" {
    interface i18nMessages extends MiniLitRequiredMessages {
       Welcome: string;
       Settings: string;
@@ -268,7 +270,7 @@ declare module "@mariozechner/mini-lit" {
 ### 2. Set Translations
 
 ```typescript
-import { setTranslations, defaultEnglish, defaultGerman } from "@mariozechner/mini-lit";
+import { setTranslations, defaultEnglish, defaultGerman } from "@jecruz/mini-lit";
 
 const translations = {
    en: {
@@ -299,7 +301,7 @@ setTranslations(translations);
 ### 3. Use in Your App
 
 ```typescript
-import { i18n, getCurrentLanguage, setLanguage } from "@mariozechner/mini-lit";
+import { i18n, getCurrentLanguage, setLanguage } from "@jecruz/mini-lit";
 
 // Simple strings
 ${i18n("Welcome")}
@@ -324,8 +326,8 @@ The mini-lit repository includes both the component library and a comprehensive 
 ### Setup
 
 ```bash
-# Clone the repository
-git clone https://github.com/badlogic/mini-lit.git
+# Clone this fork
+git clone https://github.com/jecruz/mini-lit.git
 cd mini-lit
 
 # Install dependencies
@@ -413,8 +415,8 @@ See the `/example` directory for a complete working example with all components,
 
 ## Resources
 
-- [npm Package](https://www.npmjs.com/package/@mariozechner/mini-lit)
-- [GitHub Repository](https://github.com/badlogic/mini-lit)
+- [npm Package](https://www.npmjs.com/package/@jecruz/mini-lit)
+- [GitHub Repository](https://github.com/jecruz/mini-lit)
 - [Live Demo](https://minilit.mariozechner.at)
 - [Lit Documentation](https://lit.dev)
 - [Tailwind CSS v4](https://tailwindcss.com)

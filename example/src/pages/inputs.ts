@@ -1,7 +1,7 @@
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { Input } from "@jecruz/mini-lit/dist/Input.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { AlertCircle, Check, DollarSign, Eye, EyeOff, Lock, Mail, Phone, Search, User } from "lucide";
@@ -77,7 +77,7 @@ export class InputsPage extends LitElement {
                         })}
                      </div>
                   `}
-                  code=${`import { Input } from "@mariozechner/mini-lit";
+                  code=${`import { Input } from "@jecruz/mini-lit";
 
 // Text input
 \${Input({
@@ -135,7 +135,7 @@ export class InputsPage extends LitElement {
                         })}
                      </div>
                   `}
-                  code=${`import { Input } from "@mariozechner/mini-lit";
+                  code=${`import { Input } from "@jecruz/mini-lit";
 
 // Small size
 \${Input({
@@ -200,7 +200,7 @@ export class InputsPage extends LitElement {
                         })}
                      </div>
                   `}
-                  code=${`import { Input } from "@mariozechner/mini-lit";
+                  code=${`import { Input } from "@jecruz/mini-lit";
 
 // Normal input
 \${Input({
@@ -352,7 +352,7 @@ export class InputsPage extends LitElement {
                         </div>
                      </div>
                   `}
-                  code=${`import { Input, Button, icon } from "@mariozechner/mini-lit";
+                  code=${`import { Input, Button, icon } from "@jecruz/mini-lit";
 import { Mail, Lock, User, Search, Eye, EyeOff } from "lucide";
 
 // Email with icon
@@ -414,7 +414,7 @@ import { Mail, Lock, User, Search, Eye, EyeOff } from "lucide";
                         </p>
                      </div>
                   `}
-                  code=${`import { Input } from "@mariozechner/mini-lit";
+                  code=${`import { Input } from "@jecruz/mini-lit";
 
 @state() inputValue = "";
 
@@ -526,7 +526,7 @@ import { Mail, Lock, User, Search, Eye, EyeOff } from "lucide";
                         </div>
                      </div>
                   `}
-                  code=${`import { Input, Button, Separator, icon } from "@mariozechner/mini-lit";
+                  code=${`import { Input, Button, Separator, icon } from "@jecruz/mini-lit";
 import { Search, AlertCircle, Check } from "lucide";
 
 // Search bar with button

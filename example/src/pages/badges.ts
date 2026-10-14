@@ -1,7 +1,7 @@
-import { Badge } from "@mariozechner/mini-lit/dist/Badge.js";
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
+import { Badge } from "@jecruz/mini-lit/dist/Badge.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
 import { html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
 import { AlertTriangle, Check, Crown, Shield, Star, Tag, Users, X, Zap } from "lucide";
@@ -35,7 +35,7 @@ export class BadgesPage extends LitElement {
                         ${Badge({ variant: "outline", children: "Outline" })}
                      </div>
                   `}
-                  code=${`import { Badge } from "@mariozechner/mini-lit";
+                  code=${`import { Badge } from "@jecruz/mini-lit";
 
 // Default variant
 \${Badge({ children: "Default" })}

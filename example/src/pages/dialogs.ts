@@ -1,8 +1,8 @@
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { Dialog, DialogContent, DialogFooter, DialogHeader } from "@mariozechner/mini-lit/dist/Dialog.js";
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import { Label } from "@mariozechner/mini-lit/dist/Label.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { Dialog, DialogContent, DialogFooter, DialogHeader } from "@jecruz/mini-lit/dist/Dialog.js";
+import { Input } from "@jecruz/mini-lit/dist/Input.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import { Label } from "@jecruz/mini-lit/dist/Label.js";
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { AlertTriangle, CheckCircle, Info, Save, Settings, Trash2 } from "lucide";
@@ -57,7 +57,7 @@ export class DialogsPage extends LitElement {
                         })}
                      </div>
                   `}
-                  .code=${`import { Dialog, DialogHeader, DialogContent, DialogFooter, Button } from '@mariozechner/mini-lit';
+                  .code=${`import { Dialog, DialogHeader, DialogContent, DialogFooter, Button } from '@jecruz/mini-lit';
 
 // State
 @state() dialogOpen = false;

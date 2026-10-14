@@ -1,10 +1,10 @@
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { DownloadButton } from "@mariozechner/mini-lit/dist/DownloadButton.js";
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import { Label } from "@mariozechner/mini-lit/dist/Label.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
-import { Textarea } from "@mariozechner/mini-lit/dist/Textarea.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { DownloadButton } from "@jecruz/mini-lit/dist/DownloadButton.js";
+import { Input } from "@jecruz/mini-lit/dist/Input.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import { Label } from "@jecruz/mini-lit/dist/Label.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
+import { Textarea } from "@jecruz/mini-lit/dist/Textarea.js";
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { Binary, Code, Download, FileText, Image } from "lucide";
@@ -70,7 +70,7 @@ export class DownloadButtonPage extends LitElement {
                         </div>
                      </div>
                   `}
-                  code=${`import { DownloadButton } from "@mariozechner/mini-lit";
+                  code=${`import { DownloadButton } from "@jecruz/mini-lit";
 
 // Simple text file
 \${DownloadButton({

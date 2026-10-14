@@ -1,7 +1,7 @@
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
-import "@mariozechner/mini-lit/dist/PreviewCode.js";
-import "@mariozechner/mini-lit/dist/LanguageSelector.js";
+import "@jecruz/mini-lit/dist/PreviewCode.js";
+import "@jecruz/mini-lit/dist/LanguageSelector.js";
 import {
    defaultEnglish,
    defaultGerman,
@@ -10,14 +10,14 @@ import {
    type LanguageCode,
    type MiniLitRequiredMessages,
    setTranslations,
-} from "@mariozechner/mini-lit";
-import { Badge } from "@mariozechner/mini-lit/dist/Badge.js";
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { Card, CardContent, CardHeader, CardTitle } from "@mariozechner/mini-lit/dist/Card.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
+} from "@jecruz/mini-lit";
+import { Badge } from "@jecruz/mini-lit/dist/Badge.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { Card, CardContent, CardHeader, CardTitle } from "@jecruz/mini-lit/dist/Card.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
 
 // Extend the i18n interface for this demo
-declare module "@mariozechner/mini-lit" {
+declare module "@jecruz/mini-lit" {
    interface i18nMessages extends MiniLitRequiredMessages {
       // Demo-specific messages
       Welcome: string;
@@ -470,7 +470,7 @@ setTranslations(translations);
                      1. Define your i18n interface for TypeScript autocomplete:
                   </p>
                   <code-block
-                     .code=${`declare module "@mariozechner/mini-lit" {
+                     .code=${`declare module "@jecruz/mini-lit" {
   interface i18nMessages extends MiniLitRequiredMessages {
     "Welcome": string;
     "Settings": string;
@@ -483,7 +483,7 @@ setTranslations(translations);
 
                   <p class="text-sm text-muted-foreground">2. Define translations:</p>
                   <code-block
-                     .code=${`import { setTranslations, defaultEnglish, defaultGerman } from "@mariozechner/mini-lit";
+                     .code=${`import { setTranslations, defaultEnglish, defaultGerman } from "@jecruz/mini-lit";
 
 const translations = {
   en: {
@@ -516,7 +516,7 @@ setTranslations(translations);`}
 
                   <p class="text-sm text-muted-foreground">3. Use in your app with autocomplete:</p>
                   <code-block
-                     .code=${`import { i18n, getCurrentLanguage, setLanguage } from "@mariozechner/mini-lit";
+                     .code=${`import { i18n, getCurrentLanguage, setLanguage } from "@jecruz/mini-lit";
 
 // Simple strings
 \${i18n("Welcome")}

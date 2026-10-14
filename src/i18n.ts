@@ -87,7 +87,7 @@ let translations: Record<string, i18nMessages> = {
  * Set custom translations for your app
  *
  * @example
- * import { setTranslations } from '@mariozechner/mini-lit';
+ * import { setTranslations } from '@jecruz/mini-lit';
  *
  * // Your messages must include all MiniLitRequiredMessages
  * const myTranslations = {

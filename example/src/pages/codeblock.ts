@@ -1,5 +1,5 @@
-import { Select, type SelectOption } from "@mariozechner/mini-lit/dist/Select.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
+import { Select, type SelectOption } from "@jecruz/mini-lit/dist/Select.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 
@@ -103,7 +103,7 @@ print(quicksort([3, 6, 8, 10, 1, 2, 1]))`,
   },
   "dependencies": {
     "lit": "^3.0.0",
-    "@mariozechner/mini-lit": "^0.1.0"
+    "@jecruz/mini-lit": "^0.2.2"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
@@ -191,7 +191,7 @@ ORDER BY created_at DESC;`,
                         ></code-block>
                      </div>
                   `}
-                  code=${`import '@mariozechner/mini-lit/dist/CodeBlock.js';
+                  code=${`import '@jecruz/mini-lit/dist/CodeBlock.js';
 
 // Basic usage
 <code-block

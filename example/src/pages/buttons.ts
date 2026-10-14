@@ -1,10 +1,10 @@
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { ArrowRight, Copy, Download, Edit, Heart, Mail, Save, Settings, Share, Star, Trash2, Upload } from "lucide";
-import "@mariozechner/mini-lit/dist/CodeBlock.js";
+import "@jecruz/mini-lit/dist/CodeBlock.js";
 
 @customElement("page-buttons")
 export class ButtonsPage extends LitElement {
@@ -66,7 +66,7 @@ export class ButtonsPage extends LitElement {
                         })}
                      </div>
                   `}
-                  code=${`import { Button } from "@mariozechner/mini-lit";
+                  code=${`import { Button } from "@jecruz/mini-lit";
 
 // Default variant
 \${Button({
@@ -133,7 +133,7 @@ export class ButtonsPage extends LitElement {
                         })}
                      </div>
                   `}
-                  code=${`import { Button, icon } from "@mariozechner/mini-lit";
+                  code=${`import { Button, icon } from "@jecruz/mini-lit";
 import { Settings } from "lucide";
 
 // Small size
@@ -218,7 +218,7 @@ import { Settings } from "lucide";
                         </div>
                      </div>
                   `}
-                  code=${`import { Button, icon } from "@mariozechner/mini-lit";
+                  code=${`import { Button, icon } from "@jecruz/mini-lit";
 import { Mail, ArrowRight, Download, Upload, Trash2, Share } from "lucide";
 
 // Icon on the left
@@ -292,7 +292,7 @@ import { Mail, ArrowRight, Download, Upload, Trash2, Share } from "lucide";
                         </div>
                      </div>
                   `}
-                  code=${`import { Button } from "@mariozechner/mini-lit";
+                  code=${`import { Button } from "@jecruz/mini-lit";
 
 // Disabled state
 \${Button({
@@ -367,7 +367,7 @@ import { Mail, ArrowRight, Download, Upload, Trash2, Share } from "lucide";
                         </div>
                      </div>
                   `}
-                  code=${`import { Button, icon } from "@mariozechner/mini-lit";
+                  code=${`import { Button, icon } from "@jecruz/mini-lit";
 import { Save, Trash2 } from "lucide";
 
 // Counter button
@@ -480,7 +480,7 @@ import { Save, Trash2 } from "lucide";
                         </div>
                      </div>
                   `}
-                  code=${`import { Button, icon } from "@mariozechner/mini-lit";
+                  code=${`import { Button, icon } from "@jecruz/mini-lit";
 import { Copy, Edit, Share, Heart, Star } from "lucide";
 
 // Pagination group

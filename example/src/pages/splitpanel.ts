@@ -1,9 +1,9 @@
-import { icon } from "@mariozechner/mini-lit";
+import { icon } from "@jecruz/mini-lit";
 import { html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
 import { Code, File, Folder, Layout, PanelLeft, PanelRight } from "lucide";
-import "@mariozechner/mini-lit/dist/PreviewCode.js";
-import "@mariozechner/mini-lit/dist/SplitPanel.js";
+import "@jecruz/mini-lit/dist/PreviewCode.js";
+import "@jecruz/mini-lit/dist/SplitPanel.js";
 
 @customElement("page-splitpanel")
 export class SplitPanelPage extends LitElement {
@@ -54,7 +54,7 @@ export class SplitPanelPage extends LitElement {
                         ></split-panel>
                      </div>
                   `}
-                  .code=${`import '@mariozechner/mini-lit/dist/SplitPanel.js';
+                  .code=${`import '@jecruz/mini-lit/dist/SplitPanel.js';
 
 <split-panel
   .initialSplit=\${50}

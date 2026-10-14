@@ -1,9 +1,9 @@
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
-import "@mariozechner/mini-lit/dist/PreviewCode.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import { Select, type SelectGroup, type SelectOption } from "@mariozechner/mini-lit/dist/Select.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
+import "@jecruz/mini-lit/dist/PreviewCode.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import { Select, type SelectGroup, type SelectOption } from "@jecruz/mini-lit/dist/Select.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
 import { Briefcase, Globe, MapPin, Palette, Phone, Settings, Star, User } from "lucide";
 
 @customElement("page-selects")
@@ -144,7 +144,7 @@ export class SelectsPage extends LitElement {
                         }
                      </div>
                   `}
-                  code=${`import { Select } from "@mariozechner/mini-lit";
+                  code=${`import { Select } from "@jecruz/mini-lit";
 
 const options = [
   { value: "option1", label: "Option 1" },
@@ -212,7 +212,7 @@ const options = [
                         </div>
                      </div>
                   `}
-                  code=${`import { Select } from "@mariozechner/mini-lit";
+                  code=${`import { Select } from "@jecruz/mini-lit";
 
 // Small size
 \${Select({
@@ -290,7 +290,7 @@ const options = [
                         </div>
                      </div>
                   `}
-                  code=${`import { Select } from "@mariozechner/mini-lit";
+                  code=${`import { Select } from "@jecruz/mini-lit";
 
 // Default variant
 \${Select({
@@ -372,7 +372,7 @@ const options = [
                         </div>
                      </div>
                   `}
-                  code=${`import { Select } from "@mariozechner/mini-lit";
+                  code=${`import { Select } from "@jecruz/mini-lit";
 
 // Fit content width
 \${Select({
@@ -440,7 +440,7 @@ const options = [
                         </div>
                      </div>
                   `}
-                  code=${`import { Select, icon } from "@mariozechner/mini-lit";
+                  code=${`import { Select, icon } from "@jecruz/mini-lit";
 import { Globe } from "lucide";
 
 const countryOptions = [
@@ -503,7 +503,7 @@ const priorityOptions = [
                         }
                      </div>
                   `}
-                  code=${`import { Select, type SelectGroup } from "@mariozechner/mini-lit";
+                  code=${`import { Select, type SelectGroup } from "@jecruz/mini-lit";
 
 const groupedOptions: SelectGroup[] = [
   {
@@ -571,7 +571,7 @@ const groupedOptions: SelectGroup[] = [
                         </div>
                      </div>
                   `}
-                  code=${`import { Select } from "@mariozechner/mini-lit";
+                  code=${`import { Select } from "@jecruz/mini-lit";
 
 // Normal state
 \${Select({
@@ -660,7 +660,7 @@ const groupedOptions: SelectGroup[] = [
                         </div>
                      </div>
                   `}
-                  code=${`import { Select, icon } from "@mariozechner/mini-lit";
+                  code=${`import { Select, icon } from "@jecruz/mini-lit";
 import { User, Settings, Palette, Phone, Briefcase } from "lucide";
 
 @state() selectedDepartment = "";

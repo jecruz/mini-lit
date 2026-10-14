@@ -1,7 +1,7 @@
-import { Badge } from "@mariozechner/mini-lit/dist/Badge.js";
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { Progress } from "@mariozechner/mini-lit/dist/Progress.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
+import { Badge } from "@jecruz/mini-lit/dist/Badge.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { Progress } from "@jecruz/mini-lit/dist/Progress.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 
@@ -71,7 +71,7 @@ export class ProgressPage extends LitElement {
                         ${Progress({ value: 75 })} ${Progress({ value: 100 })}
                      </div>
                   `}
-                  code=${`import { Progress } from "@mariozechner/mini-lit";
+                  code=${`import { Progress } from "@jecruz/mini-lit";
 
 // Different progress values
 \${Progress({ value: 0 })}

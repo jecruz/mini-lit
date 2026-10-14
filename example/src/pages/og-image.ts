@@ -1,13 +1,13 @@
-import { icon } from "@mariozechner/mini-lit";
-import { Alert, AlertDescription } from "@mariozechner/mini-lit/dist/Alert.js";
-import { Badge } from "@mariozechner/mini-lit/dist/Badge.js";
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { Card, CardContent, CardHeader, CardTitle } from "@mariozechner/mini-lit/dist/Card.js";
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
-import { Label } from "@mariozechner/mini-lit/dist/Label.js";
-import { Progress } from "@mariozechner/mini-lit/dist/Progress.js";
-import { Select } from "@mariozechner/mini-lit/dist/Select.js";
-import { Switch } from "@mariozechner/mini-lit/dist/Switch.js";
+import { icon } from "@jecruz/mini-lit";
+import { Alert, AlertDescription } from "@jecruz/mini-lit/dist/Alert.js";
+import { Badge } from "@jecruz/mini-lit/dist/Badge.js";
+import { Button } from "@jecruz/mini-lit/dist/Button.js";
+import { Card, CardContent, CardHeader, CardTitle } from "@jecruz/mini-lit/dist/Card.js";
+import { Input } from "@jecruz/mini-lit/dist/Input.js";
+import { Label } from "@jecruz/mini-lit/dist/Label.js";
+import { Progress } from "@jecruz/mini-lit/dist/Progress.js";
+import { Select } from "@jecruz/mini-lit/dist/Select.js";
+import { Switch } from "@jecruz/mini-lit/dist/Switch.js";
 import { html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
 import { Code, GitBranch, Heart, Package, Palette, Sparkles, Star, Zap } from "lucide";
@@ -167,7 +167,7 @@ export class OgImagePage extends LitElement {
                         <span>Web Components</span>
                      </div>
                   </div>
-                  <p class="text-xs text-muted-foreground">github.com/badlogic/mini-lit</p>
+                  <p class="text-xs text-muted-foreground">github.com/jecruz/mini-lit</p>
                </div>
             </div>
          </div>

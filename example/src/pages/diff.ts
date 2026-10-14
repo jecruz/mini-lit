@@ -1,8 +1,8 @@
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
-import "@mariozechner/mini-lit/dist/PreviewCode.js";
-import { Diff } from "@mariozechner/mini-lit/dist/Diff.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
+import "@jecruz/mini-lit/dist/PreviewCode.js";
+import { Diff } from "@jecruz/mini-lit/dist/Diff.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
 
 @customElement("page-diff")
 export class DiffPage extends LitElement {
@@ -48,7 +48,7 @@ console.log("Program completed");`;
                         newText: basicNew,
                      })}
                   `}
-                  code=${`import { Diff } from "@mariozechner/mini-lit";
+                  code=${`import { Diff } from "@jecruz/mini-lit";
 
 const oldCode = \`const message = "Hello World";
 console.log(message);\`;

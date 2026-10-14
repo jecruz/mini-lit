@@ -1,11 +1,11 @@
-import { Badge } from "@mariozechner/mini-lit/dist/Badge.js";
-import { Checkbox } from "@mariozechner/mini-lit/dist/Checkbox.js";
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
-import { icon } from "@mariozechner/mini-lit/dist/icons.js";
-import { Label } from "@mariozechner/mini-lit/dist/Label.js";
-import { Separator } from "@mariozechner/mini-lit/dist/Separator.js";
-import { Switch } from "@mariozechner/mini-lit/dist/Switch.js";
-import { Textarea } from "@mariozechner/mini-lit/dist/Textarea.js";
+import { Badge } from "@jecruz/mini-lit/dist/Badge.js";
+import { Checkbox } from "@jecruz/mini-lit/dist/Checkbox.js";
+import { Input } from "@jecruz/mini-lit/dist/Input.js";
+import { icon } from "@jecruz/mini-lit/dist/icons.js";
+import { Label } from "@jecruz/mini-lit/dist/Label.js";
+import { Separator } from "@jecruz/mini-lit/dist/Separator.js";
+import { Switch } from "@jecruz/mini-lit/dist/Switch.js";
+import { Textarea } from "@jecruz/mini-lit/dist/Textarea.js";
 import { html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { AlertCircle, Asterisk, CheckCircle, HelpCircle, Info, Mail, User } from "lucide";
@@ -64,7 +64,7 @@ export class LabelsPage extends LitElement {
                         </div>
                      </div>
                   `}
-                  code=${`import { Label, Input, Textarea } from "@mariozechner/mini-lit";
+                  code=${`import { Label, Input, Textarea } from "@jecruz/mini-lit";
 
 // Basic label with input
 <div class="space-y-2">
